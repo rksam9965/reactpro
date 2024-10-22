@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './home.css'
 import Header from '../../../components/navbar/Header/Header'
 import ExploreMenu from '../../../components/navbar/ExploreMenu/ExploreMenu'
-import FoodList from '../../../components/FoodList/FoodList'
+import FoodList from '../../../components/FoodDisplay/FoodDisplay'
+import FoodDisplay from '../../../components/FoodDisplay/FoodDisplay'
 
 const home = () => {
   const [category,setCategory] = useState("ALL");
@@ -10,7 +11,7 @@ const home = () => {
     <div >
       <Header/>
       <ExploreMenu category={category} setCategory={setCategory}/>
-      <FoodList category={category }></FoodList>
+      <FoodDisplay category={category }/>
     </div>
   )
 }
