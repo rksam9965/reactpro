@@ -4,7 +4,7 @@ import './cart.css'
 const cart = () => {
   return (
     <div>
-      
+      <p>dj</p>
     </div>
   )
 }
